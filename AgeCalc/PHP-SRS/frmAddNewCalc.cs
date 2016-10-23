@@ -28,21 +28,23 @@ namespace AgeCalc
         {
             string name;
             string dateOfBirth;
-            string daysAlive = "500";
+            double daysAlive;
             DateTime timestamp = DateTime.Now;
             name = textBox1.Text.ToString();
             dateOfBirth = textBox2.Text.ToString();
 
+            DateTime dt = Convert.ToDateTime(dateOfBirth);
+
+
+            daysAlive = Math.Floor((DateTime.Now - dt).TotalDays);
 
             //Method to Add Calculation into the Database
             AddCalc ac = new AddCalc();
-            ac.InsertIntoTable(name, dateOfBirth, timestamp);
+            ac.InsertIntoTable(name, dateOfBirth, daysAlive,timestamp);
 
-            // MessageShow
+            textBox3.Text = (daysAlive.ToString());
+
             MessageBox.Show("Calculation added successfully.");
-
-            textBox3.Text = daysAlive;
-
         
         }
 
@@ -57,6 +59,11 @@ namespace AgeCalc
         }
 
         private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

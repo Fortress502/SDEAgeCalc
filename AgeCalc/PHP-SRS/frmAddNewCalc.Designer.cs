@@ -71,11 +71,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(122, 176);
+            this.label2.Location = new System.Drawing.Point(68, 176);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 13);
+            this.label2.Size = new System.Drawing.Size(147, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Date of Birth";
+            this.label2.Text = "Date of Birth (DD/MM/YYYY)";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label6
             // 
