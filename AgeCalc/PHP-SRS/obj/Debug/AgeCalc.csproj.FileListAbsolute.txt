@@ -20,3 +20,7 @@ C:\Users\Joshua\Documents\GitHub\SDEAgeCalc\AgeCalc\PHP-SRS\obj\Debug\AgeCalc.Pr
 C:\Users\Joshua\Documents\GitHub\SDEAgeCalc\AgeCalc\PHP-SRS\obj\Debug\AgeCalc.csproj.GenerateResource.Cache
 C:\Users\Joshua\Documents\GitHub\SDEAgeCalc\AgeCalc\PHP-SRS\bin\Debug\AgeCalc.exe
 C:\Users\Joshua\Documents\GitHub\SDEAgeCalc\AgeCalc\PHP-SRS\bin\Debug\AgeCalc.pdb
+C:\Users\Joshua\Documents\GitHub\SDEAgeCalc\AgeCalc\PHP-SRS\bin\Debug\AgeCalc.exe.manifest
+C:\Users\Joshua\Documents\GitHub\SDEAgeCalc\AgeCalc\PHP-SRS\bin\Debug\AgeCalc.application
+C:\Users\Joshua\Documents\GitHub\SDEAgeCalc\AgeCalc\PHP-SRS\obj\Debug\AgeCalc.exe.manifest
+C:\Users\Joshua\Documents\GitHub\SDEAgeCalc\AgeCalc\PHP-SRS\obj\Debug\AgeCalc.application
