@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
+using Npgsql;
 
 namespace AgeCalc
 {
     public class DBConnect
     {
-        public MySqlConnection conn;
+        public NpgsqlConnection conn;
         public string connString;
 
         //Constructor
@@ -20,8 +20,8 @@ namespace AgeCalc
 
         public void Initialize()
         {
-            string connString = "server=127.0.0.1;uid=root;" + "pwd=SDEAGECALC;database=agecalc;";
-            conn = new MySqlConnection(connString);
+            string connString = "Host=localhost;port=5432;username=SDE;Password=SDEAgeCalc;database=agecalc;";
+            conn = new NpgsqlConnection(connString);
         }
 
 
@@ -33,20 +33,8 @@ namespace AgeCalc
                 conn.Open();
                 return true;
             }
-            catch (MySqlException ex)
+            catch (NpgsqlException ex)
             {
-                switch (ex.Number)
-                {
-                    case 0:
-                        Console.WriteLine("Unable to connect to server");
-                        break;
-                    case 1045:
-                        Console.WriteLine("Invalid user/pass");
-                        break;
-                    default:
-                        Console.WriteLine("Unknown Error");
-                        break;
-                }
                 return false;
             }
         }
@@ -58,9 +46,8 @@ namespace AgeCalc
                 conn.Close();
                 return true;
             }
-            catch (MySqlException ex)
+            catch (NpgsqlException ex)
             {
-                Console.WriteLine(ex.Message);
                 return false;
             }
         }

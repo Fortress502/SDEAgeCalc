@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Data;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+using Npgsql;
 
 namespace AgeCalc
 {
@@ -24,8 +24,8 @@ namespace AgeCalc
 
                     DataSet ds = new DataSet();
 
-                    var mysqlDA = new MySqlDataAdapter(selectQuery, db.conn);
-                    mysqlDA.Fill(ds);
+                    var npgsqlDA = new NpgsqlDataAdapter(selectQuery, db.conn);
+                    npgsqlDA.Fill(ds);
                     dataGridStock.DataSource = ds.Tables[0].DefaultView;
                 }
             }

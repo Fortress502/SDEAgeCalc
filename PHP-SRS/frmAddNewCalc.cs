@@ -38,9 +38,11 @@ namespace AgeCalc
 
             daysAlive = Math.Floor((DateTime.Now - dt).TotalDays);
 
+            string dbtimestamp = DateTime.Now.ToString("yyyy-MM-dd h:mm tt");
+
             //Method to Add Calculation into the Database
             AddCalc ac = new AddCalc();
-            ac.InsertIntoTable(name, dateOfBirth, daysAlive,timestamp);
+            ac.InsertIntoTable(name, dateOfBirth, daysAlive, dbtimestamp);
 
             textBox3.Text = (daysAlive.ToString());
 
