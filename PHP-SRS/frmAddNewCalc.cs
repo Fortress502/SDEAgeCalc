@@ -26,25 +26,31 @@ namespace AgeCalc
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string name;
+            string firstname;
+            string surname;
             string dateOfBirth;
             double daysAlive;
+            double martianDaysAlive;
+
             DateTime timestamp = DateTime.Now;
-            name = textBox1.Text.ToString();
+            firstname = textBox1.Text.ToString();
+            surname = textBox4.Text.ToString();
             dateOfBirth = textBox2.Text.ToString();
 
             DateTime dt = Convert.ToDateTime(dateOfBirth);
 
 
             daysAlive = Math.Floor((DateTime.Now - dt).TotalDays);
+            martianDaysAlive = Math.Floor(daysAlive * 0.972972972972973);
 
             string dbtimestamp = DateTime.Now.ToString("yyyy-MM-dd h:mm tt");
 
             //Method to Add Calculation into the Database
             AddCalc ac = new AddCalc();
-            ac.InsertIntoTable(name, dateOfBirth, daysAlive, dbtimestamp);
+            ac.InsertIntoTable(firstname, surname, dateOfBirth, daysAlive, martianDaysAlive, dbtimestamp);
 
             textBox3.Text = (daysAlive.ToString());
+            textBox5.Text = (martianDaysAlive.ToString());
 
             MessageBox.Show("Calculation added successfully.");
         
