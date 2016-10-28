@@ -42,134 +42,31 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AgeCalc.exe" size="15312">
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="MySql.Data" version="6.9.9.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AgeCalc.exe" size="15872">
       <assemblyIdentity name="AgeCalc" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>E1Za9BsGIth0hQPi2AsH7+8e7b/W4dQocGRzE6jeJ5w=</dsig:DigestValue>
+        <dsig:DigestValue>mTOnz8SYeZfCJaR0GSzFEXZI8HgYnNRIxPzvpt5Lt6o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Mono.Security.dll" size="300544">
-      <assemblyIdentity name="Mono.Security" version="4.0.0.0" publicKeyToken="0738EB9F132ED756" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Npgsql.dll" size="482304">
+      <assemblyIdentity name="Npgsql" version="3.0.8.0" publicKeyToken="5D8B90D52F46FDA7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZDJH0/LML7Oskg4mgmUsRlptx9uAhZQnaFOU3OuSrJQ=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Npgsql.dll" size="352768">
-      <assemblyIdentity name="Npgsql" version="2.2.4.3" publicKeyToken="5D8B90D52F46FDA7" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zEsGA/e5vQconDKyz2mEmeW6qS/5ZLnJrv9m8yeXrKA=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de\Npgsql.resources.dll" size="17920">
-      <assemblyIdentity name="Npgsql.resources" version="2.2.4.3" publicKeyToken="5D8B90D52F46FDA7" language="de" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>aeIp9HP5OgpszEidhWcJu9eNfunPI/96MANy1Pc0Nsc=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\Npgsql.resources.dll" size="9728">
-      <assemblyIdentity name="Npgsql.resources" version="2.2.4.3" publicKeyToken="5D8B90D52F46FDA7" language="es" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>d+2X9BrxyogIWp5ghvLQErJ97cpecI+fjXqpgV7cWHw=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fi\Npgsql.resources.dll" size="9216">
-      <assemblyIdentity name="Npgsql.resources" version="2.2.4.3" publicKeyToken="5D8B90D52F46FDA7" language="fi" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ISTuQlUfgZrQoxa2pHhA2z1oD7ZHyTeUeMKAAtwzPpM=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\Npgsql.resources.dll" size="17920">
-      <assemblyIdentity name="Npgsql.resources" version="2.2.4.3" publicKeyToken="5D8B90D52F46FDA7" language="fr" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>IzAg4SLSevVYhr8eNLYM1MOuxT70mcH6mQmMez0S+TA=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ja\Npgsql.resources.dll" size="17920">
-      <assemblyIdentity name="Npgsql.resources" version="2.2.4.3" publicKeyToken="5D8B90D52F46FDA7" language="ja" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>eGD23VOJTn1b3u0l2KiU8RHai7byW/x73Ig9MwXMslU=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\Npgsql.resources.dll" size="15872">
-      <assemblyIdentity name="Npgsql.resources" version="2.2.4.3" publicKeyToken="5D8B90D52F46FDA7" language="zh-CN" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>62HY4DEk24ZGAJjjZqm1S6mdO3RxO4JtMXNosCiH/nY=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PeinearyDevelopment.Framework.Data.dll" size="43008">
-      <assemblyIdentity name="PeinearyDevelopment.Framework.Data" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xn0iL4Pdl6PAMfqgL2WWb+DnqZ4L/pIxIV8zE7bddb8=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PeinearyDevelopment.Framework.Data.NpgSql.dll" size="7680">
-      <assemblyIdentity name="PeinearyDevelopment.Framework.Data.NpgSql" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dhEYV8ik/AkNswanyjxkBqvV2hwtZHG0ROrB7ff+Tq0=</dsig:DigestValue>
+        <dsig:DigestValue>Gz5l6IvfHU90iY4CbNKTYNrlYOmIG8GMEajPcSjSdJM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
