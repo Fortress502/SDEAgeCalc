@@ -16,7 +16,7 @@ namespace AgeCalc
         {
             InitializeComponent();
             History st = new History();
-            st.SelectFromTable("SELECT * FROM calctable", dataGridSales);
+            st.SelectFromTable("SELECT * FROM martiancalctable", dataGridSales);
         }
 
         private void dataGridSales_CellContentClick(object sender, DataGridViewCellEventArgs e)

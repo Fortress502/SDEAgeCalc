@@ -17,7 +17,7 @@ namespace AgeCalc
             {
                 var cmd = db.conn.CreateCommand();
 
-                cmd.CommandText = "INSERT INTO calctable (firstname,surname,dateofbirth,daysalive,martiandaysalive,dbtimestamp) VALUES ('" + firstname + "', '" + surname + "', '" + dateofbirth + "'," + daysalive + "," + martiandaysalive +",'" + dbtimestamp + "')";
+                cmd.CommandText = "INSERT INTO martiancalctable (firstname,surname,dateofbirth,daysalive,martiandaysalive,dbtimestamp) VALUES ('" + firstname + "', '" + surname + "', '" + dateofbirth + "'," + daysalive + "," + martiandaysalive +",'" + dbtimestamp + "')";
 
                 cmd.ExecuteNonQuery();
             }
